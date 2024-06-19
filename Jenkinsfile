@@ -1,13 +1,13 @@
 pipeline {
   environment {
-    dockerimagename = "bravinwasike/react-app"
+    dockerimagename = "raahulsharm96/react-app"
     dockerImage = ""
   }
   agent any
   stages {
     stage('Checkout Source') {
       steps {
-        git 'https://github.com/YOURUSERNAME/jenkins-kubernetes-deployment.git'
+       git 'https://github.com/raahulsharm96/jenkins-kubernetes-deployment.git' 
       }
     }
     stage('Build image') {
